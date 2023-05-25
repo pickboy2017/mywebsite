@@ -1,0 +1,81 @@
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #1F2937;
+  color: white;
+  padding:5px;
+  position: sticky;
+}
+ul li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+ul{
+  display: flex;
+  gap: 18px;
+}
+footer{
+  display: flex;
+  background-color: #1F2937;
+  color: white;
+  justify-content: center;
+  gap: 5px;
+  letter-spacing: 1px;
+  align-items: center;
+  padding: 0;
+  height: 40px;
+  font-size: 14px;
+}
+.section-four-container{
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  margin-bottom: 70px;
+}
+.section-four{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #3882F6 ;
+  color: white;
+  width: 1100px;
+  border-radius: 5px ;
+  font-size: 16px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.section-four-space,
+.section-four-subspace{
+  margin: 0;
+  color: #E5E7Eb;
+}
+.section-three{
+  flex-wrap: wrap;
+  width: 800px;
+}
+.quote-message{
+  font-size: 36px;
+  font-style: italic;
+}
+.section-three-container{
+  display: flex;
+  justify-content: center;
+  background-color: #E5E7Eb;
+  padding-top: 50px ;
+  padding-bottom: 50px;
+  margin-bottom: 70px;
+}
+.signup-lower{
+  color: white;
+  background-color: #3882F6;
+  border: solid 1px white;
+  padding: 7px;
+  border-radius: 5px;
+}
