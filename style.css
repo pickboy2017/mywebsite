@@ -1,3 +1,6 @@
+html{
+  font-size: 62.5%;
+}
 body{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
@@ -6,36 +9,47 @@ header{
   display: flex;
   background-color: #1F2937;
   color: white;
-  padding:5px;
+  padding:0.5rem;
   position: fixed;
   width: 100%;
   top: 0;
   justify-content: space-around;
 }
+.header-bar{
+  align-items: center;
+}
+header h3{
+  font-size: 2.5rem;
+}
 .header-container{
   color: white;
   background-color: #1F2937;
   display: flex;
-  gap: 100px;
+  gap: 10rem;
 }
-ul li{
-  list-style-type: none;
+ul{
+  list-style: none;
+
+}
+li{
+  list-style: none;
 }
 a{
   text-decoration: none;
   color:white;
-  border: solid 1px white;
+  border: solid 0.1rem white;
   background-color: #3882F6;
   font-weight: bold;
-  padding: 3px 9px 4px 9px ;
-  border-radius: 40px;
+  padding: 0.3rem 0.9rem 0.4rem 0.9rem ;
+  border-radius: 4rem;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
 }
 
 ul{
   display: flex;
-  gap: 18px;
+  gap: 1.8rem;  
 }
 
 footer{
@@ -43,18 +57,18 @@ footer{
   background-color: #1F2937;
   color: white;
   justify-content: center;
-  gap: 5px;
-  letter-spacing: 1px;
+  gap: 0.5rem;
+  letter-spacing: 0.1rem;
   align-items: center;
   padding: 0;
-  height: 40px;
-  font-size: 14px;
+  height: 4rem;
+  font-size: 1.4rem;
 }
 .section-four-container{
   display: flex;
   justify-content: center;
-  padding: 2px;
-  margin-bottom: 70px;
+  padding: 0.2rem;
+  margin-bottom: 7rem;
 }
 .section-four{
   display: flex;
@@ -62,68 +76,74 @@ footer{
   justify-content: space-around;
   background-color: #3882F6 ;
   color: white;
-  width: 1100px;
-  border-radius: 5px ;
-  font-size: 16px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  width: 110rem;
+  border-radius: 0.5rem ;
+  font-size: 1.6rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .lowercontrast-text{
   color: #E5E7Eb;
 }
 .section-three{
   flex-wrap: wrap;  
-  width: 800px;
+  width: 80rem;
 }
 .quote-message{
-  font-size: 36px;
+  font-size: 3.6rem;
   font-style: italic;
 }
 .section-three-container{
   display: flex;
   justify-content: center;
   background-color: #E5E7Eb;
-  padding-top: 50px ;
-  padding-bottom: 50px;
-  margin-bottom: 70px;
-  margin-top: 70px;
+  padding-top: 5rem ;
+  padding-bottom: 5rem;
+  margin-bottom: 7rem;
+  margin-top: 7rem;
 }
 .section-three-author{
   display: flex;
   justify-content: end;
   align-items: center;
-  padding-right: 2px;
-  font-size: 18px;
+  padding-right: 0.2rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 .section-two-container{
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
 .section-two-header{
   display: flex;
   justify-content: center;
+  font-size: 2rem;
 }
 .section-two{
   display: flex;
   justify-content: space-around;
 }
 .section-one-container{
-  padding: 5px;
+  padding: 3rem;
   display: flex;
-  gap: 15%;
+  gap: 30rem;
   width: 100%;
+  justify-content: center;
 }
 .section-one-body{
   display: flex;
-  width: 500px;
+  width: 30rem;
   flex-wrap: wrap;
+  font-size: 1.4rem;
+  padding: 1rem;
+  align-items: center;
 }
 .section-one{
-  margin-top: 70px;
+  margin-top: 7rem;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
+  padding: 2rem;
 }
 /*
 .section-one-image{
@@ -132,37 +152,37 @@ footer{
 }
 */
 .section-image{
-  padding: 10px;
+  padding: 1rem;
   object-fit: cover;
-  margin-top: 80px;
-  width: 400px;
+  margin-top: 8rem;
+  width: 40rem;
 }
 div .content-image{
   display: flex;
   flex-wrap: wrap;
-  width: 200px;
-  padding: 1px;
+  width: 20rem;
+  padding: 0.1rem;
   overflow: hidden;
   justify-content: center;
-  border: #3882F6 solid 3px;
-  border-radius: 5px;
+  border: #3882F6 solid 0.3rem;
+  border-radius: 0.5rem;
 }
 div img {
   display: flex;
   width: 100%;
-  height: 200px;
-  margin-bottom: 12px;
-  border-radius: 5px;
-  box-shadow: 0 0px 5px #E5E7Eb ;
+  height: 20rem;
+  margin-bottom: 1.2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0px 0.5rem #E5E7Eb ;
 }
 .details{
-  font-size: 14px;
-  padding: 2px;
+  font-size: 1.4rem;
+  padding: 0.2rem;
 }
 button{
   color: white;
   background-color: #3882F6;
-  border: solid 1px white;
-  padding: 7px;
-  border-radius: 5px;
+  border: solid 0.1rem white;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
 }
