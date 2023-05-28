@@ -1,0 +1,187 @@
+/* rem and em do not depend on html font-size in media queries
+insted, 1rem = 1em = 16px */
+
+/* ************************************ */
+
+/* 1350 width sa webpage nga mag sugod na ug apply sa media /16px is
+default font-size sa hmtl = 84em */
+
+/* 1350px to 1201x width screen (smaller desktop) */
+/* breakpoint:1350px */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 4.8rem 0 0;
+  }
+}
+
+/* 1200px  to 993px (landscape tables) */
+/* breakpoint: 1200px*/
+@media (max-width: 75em) {
+  html {
+    /* 9px/16px  */
+    font-size: 56.25%;
+  }
+  .container {
+    padding: 0 8.8rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+  .grid-cols-3 {
+    column-gap: 4.8rem;
+  }
+  .header {
+    padding: 0 3.2rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+  .testimonials-container {
+    padding: 9.6rem 4.8rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 992px to 770px large(laptops) */
+/* breakpoint:992px */
+@media (max-width: 62em) {
+  html {
+    /* 8px/16px  */
+    font-size: 50%;
+  }
+  /* .header {
+    padding: 0 8rem;
+  } */
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+  .logos img {
+    height: 2.4rem;
+  }
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .grid-cols-3 {
+    column-gap: 3.2rem;
+  }
+  .meal-description {
+    padding: 2.4rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .testimonials {
+    column-gap: 9.6rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 4.8rem;
+  }
+  .container-login-form {
+    grid-template-columns: 3fr 2fr;
+  }
+  .login-form {
+    grid-template-columns: 1fr;
+  }
+  .btn-login-form-grid {
+    margin-top: 1.2rem;
+  }
+}
+
+/* Breakpoint of 768px and mobile navigation icon is now enable at this point*/
+@media (max-width: 48em) {
+  /* mobile navigation */
+  .btn-mobile-nav {
+    display: block;
+  }
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    /* for center position */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* for animation */
+    transition: all 0.5s ease-in;
+
+    /* para inig click nimo sa menu-icon mo pop-up tong navigation but in 
+            X-axis direction*/
+    transform: translateX(100%);
+
+    /* proper hide the navigation properly */
+    /* 1st step: Hide it visually */
+    opacity: 0;
+
+    /* 2nd: make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3rd: hide it from screen readers */
+    visibility: hidden;
+  }
+
+  /* for vertiacal align of navigation */
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  /* font-size of navigation */
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  /* mechanism for show and hide the navigation */
+  /* mechanism sad ni para makita nimo ang icon, kay naa si .nav-open*/
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+
+    /* kung mo appear na ang mga navigation mo steady siya dili mo lihok   */
+    transform: translateX(0);
+  }
+
+  /* for close icon to be appear when click the menu icon */
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  /* for menu icon to be disappear, when close icon is appear */
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+}

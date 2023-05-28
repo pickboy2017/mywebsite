@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: white;
+  background-image: linear-gradient(to right top, #845ec2, #eb4d9f, #ff695a, #feac00, #a8eb12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  background-color: #4E8397;
+  margin: 0;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+  font-size: 62.5%;
+}
+h1{
+  font-size: 3rem;
+  letter-spacing: 1px;
+  color: #1F2937
+}
+.caption{
+  color: #1F2937;
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* max-width: 60rem; */
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 2rem ;
+  padding-right: 2rem;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  align-items: center;
+  line-height: 4rem; 
+  letter-spacing: 1px;
+  /* box-shadow: 0 0 5px #E5E7Eb; */
+  /* padding: 1rem 5rem 1rem 5rem; */
+  border-radius: 7px;
+  background-image: linear-gradient(to right top, #845ec2, #eb4d9f, #ff695a, #feac00, #a8eb12);
+
+}
+.talent-container{
+  line-height: 1.9rem;
+  display: flex;
+  gap: 3.5rem;
+}
+.talent-one{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 0 5px #1F2937  ; */
+  border-radius: 5px;
+  /* background-color: #845EC2; */
+}
+.talent-two{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 0 5px #1F2937  ; */
+  border-radius: 5px;
+  /* background-color: #845EC2; */
+}
+div p{
+  padding: 1rem;
+  color: #1F2937;
+  font-size: 1.5rem;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.ting-lyle{
+  margin-top: 2rem;
+}
+div img{
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #E5E7Eb;
+  /* padding: 0.5rem; */
+}
+div img:hover{
+  transform: scale(1.03);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+ }
+footer{
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  padding: 2rem;
+  background-color: #1F2937;
+}
+span{
+  font-style: italic;
+  font-size: 1.5rem;
+  font-style: normal;
+}
+li{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+a{
+  color: #E5E7Eb;
+}

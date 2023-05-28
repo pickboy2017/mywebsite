@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html{
   font-size: 62.5%;
 }
@@ -12,7 +17,7 @@ header{
   padding:0.5rem;
   position: fixed;
   width: 100%;
-  top: 0;
+  top: 3rem;
   justify-content: space-around;
 }
 .header-bar{
