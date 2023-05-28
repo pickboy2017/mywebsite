@@ -14,10 +14,10 @@ header{
   display: flex;
   background-color: #1F2937;
   color: white;
-  padding:0.5rem;
+  padding:1rem;
   position: fixed;
   width: 100%;
-  top: 3rem;
+  top: 0;
   justify-content: space-around;
 }
 .header-bar{
